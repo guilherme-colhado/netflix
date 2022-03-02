@@ -1,0 +1,173 @@
+/*!
+Theme Name: Portfólio
+Theme URI: http://underscores.me/
+Author: Maria Porcina
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: portfolio
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Portfólio is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+
+--------------------------------------------
+ESTRUTURAÇÃO BASE (HC Desenvolvimentos v1)
+--------------------------------------------
+**** GERAL
+**** BODY
+**** HEADER
+**** FOOTER
+**** PÁGINA INICIAL
+**** EXTRAS
+**** @media
+
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Slabo 27px', serif;
+font-family: 'Source Sans Pro', sans-serif;
+
+*/
+
+
+/* GERAL */
+
+h1, img, input, p, label{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* GERAL */
+
+
+/* BODY */
+body{
+	background-color: black;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    padding: 5px;
+}
+/* BODY */
+
+
+/* HEADER */
+header img{
+	width: 25%;
+}
+/* HEADER */
+
+
+/* FOOTER */
+footer{}
+/* FOOTER */
+
+
+/* PÁGINA INICIAL */
+main{
+    color: #B3B3B3;
+}
+
+main h1{
+    color: #FFF;
+    margin: 10% 0;
+}
+
+
+.write{
+    background-color: #333333;
+    width: 99%;
+    height: 3rem;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+input[type="button"]{
+    background-color: #e80024;
+    width: 99%;
+    height: 3rem;
+    color: #fff;
+    margin-top: 20px;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#remember{
+    border: none;
+    background-color: rebeccapurple;
+}
+
+#remember:checked{
+    color: white;
+    background-color: #1168D0;
+}
+
+.gray{
+    color: #B3B3B3;
+}
+
+.white{
+    color: #FFF;
+}
+
+.blue{
+    color: #1168D0;
+}
+
+.little{
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+/* PÁGINA INICIAL */
+
+
+/* EXTRAS */
+
+@media screen and (min-width:720px) {
+    body, h1, img, input, p, label{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        background: url(../img/background-image.jpg);
+    }
+
+    header img{
+        width: 14%;
+        margin: 2%;
+    }
+
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section{
+        background-color: rgba(0,0,0,0.6);
+        width: 450px;
+        padding: 60px 68px 40px;
+        box-sizing: border-box;
+    }
+}
+
+/* EXTRAS */
